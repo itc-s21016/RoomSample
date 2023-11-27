@@ -6,10 +6,15 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="16dp"
-        android:hint="Enter text" />
+        android:autofillHints="name"
+        android:hint="@string/hintTxt"
+        android:inputType="date" />
 
     <Button
         android:id="@+id/saveButton"
@@ -17,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editText"
         android:layout_marginTop="8dp"
-        android:text="Save"/>
+        android:text="@string/saveTxt" />
 
     <TextView
         android:id="@+id/dataText"
@@ -25,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/saveButton"
         android:layout_marginTop="8dp"
-        android:text="Data"
+        android:text="@string/dataTxt"
         android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
