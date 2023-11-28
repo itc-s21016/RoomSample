@@ -3,4 +3,5 @@
     <string name="hintTxt">Enter Text</string>
     <string name="saveTxt">Save</string>
     <string name="dataTxt">Data</string>
+    <string name="btnText">hoge</string>
 </resources>

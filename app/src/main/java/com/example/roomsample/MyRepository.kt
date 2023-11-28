@@ -13,4 +13,7 @@ class MyRepository(private val myDao: MyDao) {
     suspend fun inserttt(entity: MyEntity) {
         myDao.Insert(entity)
     }
+    suspend fun delete(entity: MyEntity) {
+        myDao.Delete(entity)
+    }
 }

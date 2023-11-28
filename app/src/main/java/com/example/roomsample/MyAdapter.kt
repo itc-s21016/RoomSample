@@ -3,6 +3,7 @@ package com.example.roomsample
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.WorkerThread
 import androidx.recyclerview.widget.DiffUtil
@@ -24,10 +25,10 @@ class MyAdapter : ListAdapter<MyEntity, MyAdapter.YourViewHolder>(YourDiffCallba
 
     @WorkerThread
     class YourViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val textView: TextView = itemView.findViewById(R.id.textView)
+        val named: TextView = itemView.findViewById(R.id.text_view)
 
         fun bind(entity: MyEntity) {
-            textView.text = entity.name
+            named.text = entity.name
         }
     }
 
